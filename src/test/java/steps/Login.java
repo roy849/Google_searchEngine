@@ -1,19 +1,13 @@
 package steps;
 
+import common.Googlebase;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
+public class Login extends Googlebase{
 
-public class Login {
-    ChromeDriver driver;
     @When("i enter {string} in the email text  box")
     public void i_enter_in_the_email_text_box() {
-        driver = new ChromeDriver();
-        driver.get("https://www.google.com/");
-
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+       launchBrowser("www.amazon.com");
 
     }
 
