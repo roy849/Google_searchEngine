@@ -1,12 +1,12 @@
 Feature: searching products
 
   Scenario Outline: log in amazon page
-    Given i am on the google home page
+    Given i am on the amazon home page
     When i enter "<Email>" in the email text  box
-    And i click on the continue button
+        And i click on the continue button
     And i enter "<password>" in the password text box
     And i click on the sign in button
-    Then i can see the search result successful
+    Then i can loginto my account successful
     Examples:
       |Email |password|
       |Abc123@gmail.com|Bnm123|
