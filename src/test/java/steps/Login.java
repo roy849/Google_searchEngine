@@ -9,7 +9,7 @@ public class Login extends Googlebase{
 
     @Given("i am on the amazon home page")
     public void i_am_on_the_amazon_home_page() {
-       launchBrowser("www.amazon.com");
+        launchBrowsertest("https://www.amazon.com/");
     }
     @When("i enter {string} in the email text  box")
     public void i_enter_in_the_email_text_box(String string) {

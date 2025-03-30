@@ -15,7 +15,7 @@ public class Searchingproduct extends Googlebase {
     public void i_am_on_the_google_home_page() {
 
 
-        launchBrowser("https//www.google.com");
+        launchBrowsertest("https://www.google.com/");
 
 
     }
@@ -27,7 +27,7 @@ public class Searchingproduct extends Googlebase {
     @When("i enter {string} in the search bar")
     public void i_enter_in_the_search_bar(String  product_name) {
 
-        googleHomepage Gh = new googleHomepage(driver);
+        googleHomepage Gh = new googleHomepage(dr);
 
         Gh.enterProduct(product_name);
 
@@ -37,7 +37,7 @@ public class Searchingproduct extends Googlebase {
     @When("i click on the search button")
     public void i_click_on_the_search_button() {
 
-        googleHomepage Gh = new googleHomepage(driver);
+        googleHomepage Gh = new googleHomepage(dr);
 
         Gh.ClickonSearchButton();
     }
@@ -45,7 +45,7 @@ public class Searchingproduct extends Googlebase {
     @Then("i can see the search result successful")
     public void i_can_see_the_search_result_successful() {
 
-        googleHomepage Gh = new googleHomepage(driver);
+        googleHomepage Gh = new googleHomepage(dr);
 
 
        Assert.assertTrue(Gh.validateAllTab());

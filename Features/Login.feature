@@ -1,9 +1,9 @@
-Feature: searching products
+Feature: login on amazon account
 
   Scenario Outline: log in amazon page
     Given i am on the amazon home page
     When i enter "<Email>" in the email text  box
-        And i click on the continue button
+    And i click on the continue button
     And i enter "<password>" in the password text box
     And i click on the sign in button
     Then i can loginto my account successful

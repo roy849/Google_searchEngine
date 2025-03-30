@@ -13,6 +13,8 @@ public class Googlebase {
 
     public static void launchBrowser(String Url){
 
+
+
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
@@ -22,6 +24,26 @@ public class Googlebase {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
+
+    public WebDriver dr;
+
+
+    public  void launchBrowsertest(String Url){
+
+        WebDriverManager.chromedriver().setup();
+
+        dr = new ChromeDriver();
+        dr.get(Url);
+
+        dr.manage().window().maximize();
+        dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    }
+
+
+
+
+
 
     public void closeBrowser(){
 
